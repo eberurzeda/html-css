@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="4favicon.ico" type="image/x-icon">
+    <title>Formatações de Texto</title>
+    <style>
+        mark{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag strong (semântica).</p>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag i. (semântica).</p>
+    <p>Obeservação: Não se usa o negrito e o intálico direto no html, isso é coisa para o CSS 3. No HTML devemos usar apenas a semântica e não a forma</p>
+    <p>Obeservação 2: As tags de semântica, <strong>strong</strong> e <i>i</i>, por exemplo, podemos encontrá-las facilmente, <mark>selecionando o trecho que receberá a semântica</mark>, depois clicamos vtrl + shift + p, assim abre uma janela e clicamos no opção "<i>Wrap with abbreviation</i>", daí digitamos um "i", "strong" ou "p", por exemplo e damos enter para aplicar a semântica no trecho selecionado.</p>
+    <h2>O marcador de texto: 1ª forma</h2>
+    <p>Podemos <mark>marcar um texto</mark> com a tag "mark" direto no parágrafo.</p>
+    <p>Acima, onde temos a marca cor limão, existe uma tag html "mark" + um parâmetro Css 3.</p>
+    <h1>2ª Forma</h1>
+    <p>A outra forma, e mais recomendada, <mark>é criar as marcações nas frases só com a tag "mark"</mark> e lá no "head", inserir um "Style CSS 3 geral para todos os "marks da página"</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>estamos criando um <big>texto grande</big> e um <small>texto pequeno</small>. para testar as tagts big e small.</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar ênfase e indicar que ele foi inserido depois. Obs.:  Obs: Na tag "ins" tem semântica, na tag "u", não. Veja abaixo </p>
+    <p>Este é um <u>texto sublinhado sem semântica</u>, ele leva a tag "u", antiga!</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>0</p>
+</body>
+</html>
