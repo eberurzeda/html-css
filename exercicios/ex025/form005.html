@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 5</title>
+    <style>
+        body {
+            background-color: rgba(255, 228, 196, 0.418);
+        }
+        fieldset {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 255, 255, 0.432);
+            padding: 10px;
+        }
+        legend {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Formulário Checkbox e Rádio</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"> <label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label> <br>
+            <!--Quando usamos o mesmo "name" no input "radio" ele só deixa escolher um por vez, ou masc. ou fem. / no "Checbox, que podemos escolher mais de um, usamos um "name" diferente para cada opção.-->
+        </fieldset> <br>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
