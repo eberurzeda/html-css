@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fexible Box 3</title>
+    <style>
+        div.container { /*Pai*/
+            background-color: bisque;
+
+            display: flex;
+            flex-flow: row wrap; /*Versão curta, abaixo a versão longa*/
+            /*flex-direction: row;
+            flex-wrap: nowrap*/
+        }
+        div.item {/*Filho*/
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplo de Blco A</div>
+        <div class="item">Exemplo de Blco B</div>
+        <div class="item">Exemplo de Blco C</div>
+        <div class="item">Exemplo de Blco D</div>
+        <div class="item">Exemplo de Blco E</div>
+        <div class="item">Exemplo de Blco F</div>
+        <div class="item">Exemplo de Blco G</div>
+
+    </div>
+</body>
+</html>
