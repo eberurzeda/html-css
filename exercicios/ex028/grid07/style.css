@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(2, 1fr);
+
+   /* grid-template-rows: repeat(3, 80px);
+            grid-template-columns: 1fr 2fr 1fr;*/
+            /* ou
+            grid-template-columns: 4fr repeat(2, 1fr);
+            grid-template-columns: 100px 40% repeat(2, 1fr);
+            */
+            /*grid-auto-flow: row;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 120px;
+            gap: 10px;
+            place-items: normal normal;
+            place-content: normal normal;*/
+}
+
+.caixa1 {
+    background-color: antiquewhite;
+    grid-area: 1 / 1 / 2 / 5;
+   
+}
+
+.caixa2 {
+    background-color: aquamarine;
+    grid-area: 2 / 3 / 4 / 5;
+
+}   
+
+.caixa3 {
+    background-color: rgba(226, 86, 86, 0.527);
+    grid-area: 2 / 1 / -1 / 5;
+
+}
+
+.caixa4 {
+    background-color: blanchedalmond;
+}
+
+.caixa5 {
+    background-color: rgb(224, 224, 116);
+}
